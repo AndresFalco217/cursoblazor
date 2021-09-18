@@ -114,3 +114,9 @@ C:\Users\Andres Falco\source\repos\CURSO.NET\GitMiTienda\MITIENDA.BlazorServer\o
 C:\Users\Andres Falco\source\repos\CURSO.NET\GitMiTienda\MITIENDA.BlazorServer\obj\Debug\net5.0\MITIENDA.BlazorServer.csproj.CopyComplete
 C:\Users\Andres Falco\source\repos\CURSO.NET\GitMiTienda\MITIENDA.BlazorServer\obj\Debug\net5.0\RazorDeclaration\Shared\PathNotFound.razor.g.cs
 C:\Users\Andres Falco\source\repos\CURSO.NET\GitMiTienda\MITIENDA.BlazorServer\obj\Debug\net5.0\Razor\Shared\PathNotFound.razor.g.cs
+C:\Users\Andres Falco\source\repos\CURSO.NET\GitMiTienda\MITIENDA.BlazorServer\obj\Debug\net5.0\RazorDeclaration\Pages\Account\Login.razor.g.cs
+C:\Users\Andres Falco\source\repos\CURSO.NET\GitMiTienda\MITIENDA.BlazorServer\obj\Debug\net5.0\Razor\Pages\Account\Login.razor.g.cs
+C:\Users\Andres Falco\source\repos\CURSO.NET\GitMiTienda\MITIENDA.BlazorServer\obj\Debug\net5.0\RazorDeclaration\Pages\Account\Register.razor.g.cs
+C:\Users\Andres Falco\source\repos\CURSO.NET\GitMiTienda\MITIENDA.BlazorServer\obj\Debug\net5.0\Razor\Pages\Account\Register.razor.g.cs
+C:\Users\Andres Falco\source\repos\CURSO.NET\GitMiTienda\MITIENDA.BlazorServer\obj\Debug\net5.0\RazorDeclaration\Pages\Account\RecoverPassword.razor.g.cs
+C:\Users\Andres Falco\source\repos\CURSO.NET\GitMiTienda\MITIENDA.BlazorServer\obj\Debug\net5.0\Razor\Pages\Account\RecoverPassword.razor.g.cs
