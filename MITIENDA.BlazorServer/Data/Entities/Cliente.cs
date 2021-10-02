@@ -14,5 +14,6 @@ namespace MITIENDA.BlazorServer.Data.Entities
         public string Direccion { get; set; }
         public string Telefono { get; set; }
         public string Email { get; set; }
+        public virtual ICollection<Factura> Facturas { get; set; }
     }
 }

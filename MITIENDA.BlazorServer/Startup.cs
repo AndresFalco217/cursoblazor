@@ -2,10 +2,12 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using MITIENDA.BlazorServer.Data;
+using MITIENDA.BlazorServer.Data.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,9 +15,9 @@ using System.Threading.Tasks;
 
 namespace MITIENDA.BlazorServer
 {
+
     public class Startup
     {
-        //EJEMPLOS DE MODIFICACIONES
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
@@ -27,10 +29,17 @@ namespace MITIENDA.BlazorServer
         {
             services.AddRazorPages();
             services.AddServerSideBlazor();
-            services.AddSingleton<WeatherForecastService>();
+
+            services.AddDbContext<MiTiendaDbContext>(options =>
+                    options.UseSqlServer(Configuration.GetConnectionString("MiTiendaDbContext")),
+                    ServiceLifetime.Transient);
+
+            services.AddTransient<MiTiendaDbContext>();
+            services.AddTransient<UsuariosServices>();
+            services.AddTransient<RolesService>();
+
         }
 
-        // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
             if (env.IsDevelopment())

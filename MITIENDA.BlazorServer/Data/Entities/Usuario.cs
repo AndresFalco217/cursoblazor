@@ -12,5 +12,7 @@ namespace MITIENDA.BlazorServer.Data.Entities
         public string Nombre { get; set; }
         public string Email { get; set; }
         public string Clave { get; set; }
+
+        public virtual Rol Rol { get; set; } //Representa que un usuario puede tener un solo rol
     }
 }

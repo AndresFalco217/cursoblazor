@@ -14,5 +14,9 @@ namespace MITIENDA.BlazorServer.Data.Entities
         public decimal Precio { get; set; }
         public decimal Costo { get; set; }
         public decimal Stock { get; set; }
+
+        public virtual Categoria Categoria { get; set; }
+
+        public virtual ICollection<DetalleFactura> DetalleFacturas { get; set; }
     }
 }

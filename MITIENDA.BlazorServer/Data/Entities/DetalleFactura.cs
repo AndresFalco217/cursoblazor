@@ -12,5 +12,8 @@ namespace MITIENDA.BlazorServer.Data.Entities
         public int IdProducto { get; set; }
         public decimal Cantidad { get; set; }
         public decimal Precio { get; set; }
+
+        public virtual Producto Producto { get; set; }
+        public virtual Factura Factura { get; set; }
     }
 }
